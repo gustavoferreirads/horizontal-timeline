@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif||Fira+Sans|Source+Sans+Pro|Montserrat:400,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(133, 133, 133, 0.44);
+  border-radius: 10px;
+}
+
+.timeline {
+  margin: 20px auto;
+  font-family: "Fira Sans", sans-serif;
+  border-radius: 5px;
+  color: #545454;
+  overflow-x: scroll;
+  width: 90%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+
+}
+
+.timeline-header {
+  position: relative;
+  padding: 20px;
+  display: inline-flex;
+  background-color: rgb(234, 234, 234);
+}
+
+.timeline-content {
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+
+.timeline-item {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  width: 100px;
+  border-right: 1px solid #dddddd;
+}
+.timeline-grid{
+  position: absolute;
+  z-index: 2;
+  width: auto;
+  height: 90%;
+  display: inline-flex;
+  padding: 0 20px 0 20px;
+}
+
+.timeline-lane {
+  display: inline-flex;
+  padding: 10px 0 10px 0;
+}
+
+
+.timeline-event {
+  background: rgb(71, 140, 243);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  min-height: 40px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px
+}
+
+.timeline-title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+
+.zoom-button {
+  background-color: #b4b4b4;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+margin: 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.zoom-button:hover {
+  background-color: #727272;
+}
+
+
+.zoom-content{
+  width: 100px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: #b4b4b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.header{
+  padding: 20px;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
